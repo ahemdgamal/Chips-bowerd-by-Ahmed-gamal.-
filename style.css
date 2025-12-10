@@ -1,0 +1,84 @@
+.logo{
+   width:150px;
+   margin-right: 220px; 
+   margin-top: -170px;
+}
+body{
+    text-align: right; 
+    background-image : url(logo.jpg) ;
+} 
+.consol{
+    marign-right: 10px; 
+    width :100%;
+    border : 5px sold red; 
+    display :flex;
+    overflow-x :auto;  
+    gap :1em; 
+}
+.consol::-webkit-scroller{
+    display :none;
+}
+.groub{
+    display :flex;
+    align-items:center;
+    justify-content :center;
+    gab :1em;
+    animation :spin 10s infinite linear;
+}
+.card{
+    flex: 0 0 5em;
+    height :5pm;
+    padding : 1pm;
+    background : cornflowrblue;
+    font-size : 3rem;
+    border-radius :0.2em;
+    text-align : centre ;
+    align-content : center ;
+    mix-blend-mode: multiply;
+    background: transparent;
+    filter: brightness(1.05);
+
+}
+@keyframes spin {
+   from {translate:0;}
+   to {translate:-100%;}
+}
+.shps {
+    width: 100%;
+    height: 100%;
+    object-fit: contain ;
+    mix-blend-mode: multiply;
+    filter: brightness(1.05);
+}
+#amazon{
+    width :100px;
+    margin-right :220px;
+    marign-top :-170px;
+}
+#crf{
+    width :100px;
+    marign-right :220px;
+    marign-top ;-170px;
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: auto;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+.social-icon img.card2 {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.social-icon img.card2:hover {
+    transform: translateY(-5px);
+    opacity: 0.8;
+} 

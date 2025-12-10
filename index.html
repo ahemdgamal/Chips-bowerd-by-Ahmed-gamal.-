@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <title>شركة شيبسي</title>
+
+    <style>
+
+        /* ضبط مقاس الموقع */
+        .container {
+            width: 430px;
+            height: 932px;
+            margin: 0 auto;
+            overflow-y: auto;
+            overflow-x: hidden;
+            background: #fff;
+            position: relative;
+            border: 2px solid #000; /* اختياري */
+        }
+
+        /* الشعار */
+        .logo {
+            width:150px;
+            margin-right: 220px;
+            margin-top: -170px;
+        }
+
+        body{
+            text-align: right;
+            background-image: url(logo.jpg);
+        }
+
+        /* السلايدر */
+        .consol{
+            margin-right: 10px; 
+            width :100%;
+            border : 5px solid red; 
+            display :flex;
+            overflow-x :auto;  
+            gap :1em; 
+        }
+
+        .consol::-webkit-scrollbar{
+            display :none;
+        }
+
+        .groub{
+            display :flex;
+            align-items:center;
+            justify-content :center;
+            gap :1em;
+            animation :spin 10s infinite linear;
+        }
+
+        .card{
+            flex: 0 0 5em;
+            height: 5em;
+            padding: 1em;
+            background: transparent;
+            font-size: 3rem;
+            border-radius: 0.2em;
+            text-align: center;
+            align-content: center;
+            mix-blend-mode: multiply;
+            filter: brightness(1.05);
+        }
+
+        @keyframes spin {
+            from {transform: translateX(0);}
+            to {transform: translateX(-100%);}
+        }
+
+        .shps {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            mix-blend-mode: multiply;
+            filter: brightness(1.05);
+        }
+
+        #amazon{
+            width:100px;
+            margin-right: 220px;
+            margin-top: -170px;
+        }
+
+        #crf{
+            width:100px;
+            margin-right: 220px;
+            margin-top: -170px;
+        }
+
+        /* social icons */
+        .social-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            margin-top: auto;
+            background-color: #f8f9fa;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .social-icon img.card2 {
+            width: 40px;
+            height: 40px;
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+
+        .social-icon img.card2:hover {
+            transform: translateY(-5px);
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>
+        <strong>
+            <mark>
+                شركة 
+                <sub><h1>شيبسي</h1></sub>
+            </mark>
+        </strong>
+    </h2>
+
+    <img src="logo.png" alt="logo" class="logo">
+
+    <video controls width="100%" loop muted autoplay>
+        <source src="sheps.mp4" type="video/mp4">
+        <source src="sheps.webm" type="video/webm">
+        <source src="sheps.ogg" type="video/ogg">
+        المتصفح لا يدعم الفيديو
+    </video>
+
+    <br><br>
+
+    <div class="consol">
+        <div class="groub">
+            <div class="card"><img src="1.png" class="shps"></div>
+            <div class="card"><img src="2.png" class="shps"></div>
+            <div class="card"><img src="3.png" class="shps"></div>
+            <div class="card"><img src="4.png" class="shps"></div>
+            <div class="card"><img src="5.png" class="shps"></div>
+            <div class="card"><img src="6.png" class="shps"></div>
+            <div class="card"><img src="7.png" class="shps"></div>
+        </div>
+    </div>
+
+    <br>
+
+    <div>
+        <strong>
+            شركة شيبسي (Chipsy) هي علامة تجارية مصرية رائدة...
+            (ضع نصك الأصلي هنا)
+        </strong>
+    </div>
+
+    <ul>
+        <h3>
+            <li>
+                للشراء من أمازون:
+                <a href="https://www.amazon.eg">Amazon</a>
+                <img src="amazon.png" id="amazon">
+            </li>
+
+            <li>
+                للشراء من كارفور:
+                <a href="https://www.carrefouregypt.com">Carrefour</a>
+                <img src="crf.png" id="crf">
+            </li>
+        </h3>
+    </ul>
+
+    <br><br>
+
+    <div class="social-icon">
+        <img src="05.png" class="card2">
+        <img src="04.png" class="card2">
+        <img src="03.png" class="card2">
+        <img src="02.png" class="card2">
+        <img src="01.png" class="card2">
+    </div>
+
+</div>
+
+</body>
+      </html>
